@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop.co</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="header-top">
+        <div>
+          <span
+            >Sign up and get 20% off your first order.
+            <a href="#"><u>Sign Up Now</u></a></span
+          >
+        </div>
+      </div>
+      <div class="header-bottom container">
+        <div class="logo">SHOP.CO</div>
+        <nav>
+          <ul class="flex justify-between">
+            <li>
+              <a href="#"
+                >Shop <img src="images/header/downArrow.svg" alt="teste"
+              /></a>
+            </li>
+            <li><a href="#">On Sale</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Brands</a></li>
+          </ul>
+        </nav>
+        <div class="search-bar">
+          <img src="images/header/search.svg" alt="" />
+          <input type="search" placeholder="Search for products..." />
+        </div>
+        <div class="header-links">
+          <a href="#"><img src="images/header/cart.svg" alt="Cart" /></a>
+          <a href="#"><img src="images/header/login.svg" alt="Login" /></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <img class="hero-vector1" src="images/hero/star1.svg" alt="" />
+      <img class="hero-vector2" src="images/hero/star2.svg" alt="" />
+      <div class="hero-content container">
+        <h1>
+          Find Clothes <br />
+          That Matches <br />Your Style
+        </h1>
+        <p>
+          Browse through our diverse range of meticulously crafted garments,
+          designed to bring out your individuality and cater to your sense of
+          style.
+        </p>
+        <button>Shop Now</button>
+        <div class="hero-stats">
+          <div>
+            <h2>200+</h2>
+            <p>International Brands</p>
+          </div>
+          <hr />
+          <div>
+            <h2>2,000+</h2>
+            <p>High-Quality Products</p>
+          </div>
+          <hr />
+          <div>
+            <h2>30,000+</h2>
+            <p>Happy Customers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands">
+      <img src="images/brands/versace.svg" alt="Versace" />
+      <img src="images/brands/zara2.svg" alt="Zara" />
+      <img src="images/brands/gucci.svg" alt="Gucci" />
+      <img src="images/brands/prada.svg" alt="Prada" />
+      <img src="images/brands/ck.svg" alt="Calvin Klein" />
+    </section>
+
+    <!-- New Arrivals Section -->
+    <section class="new-arrivals container">
+      <h2>New Arrivals</h2>
+      <div class="flex justify-evenly">
+        <!-- Each item in the New Arrivals -->
+        <div class="product-card">
+          <img src="https://placehold.co/250x300" alt="Product 1" />
+          <div class="product-info">
+            <h3>T-shirt with Tape Details</h3>
+            <p>$120</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="https://placehold.co/250x300" alt="Product 2" />
+          <div class="product-info">
+            <h3>Skinny Fit Jeans</h3>
+            <p>$240 <span class="discount">$260</span></p>
+          </div>
+        </div>
+        <!-- Add more product cards as needed -->
+      </div>
+      <button class="view-all">View All</button>
+    </section>
+
+    <!-- Top Selling Section -->
+    <section class="top-selling container">
+      <h2>Top Selling</h2>
+      <div class="flex justify-evenly">
+        <!-- Each item in the Top Selling -->
+        <div class="product-card">
+          <img src="https://placehold.co/250x300" alt="Product 3" />
+          <div class="product-info">
+            <h3>Vertical Striped Shirt</h3>
+            <p>$212 <span class="discount">$232</span></p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="https://placehold.co/250x300" alt="Product 4" />
+          <div class="product-info">
+            <h3>Courage Graphic T-shirt</h3>
+            <p>$145</p>
+          </div>
+        </div>
+        <!-- Add more product cards as needed -->
+      </div>
+      <button class="view-all">View All</button>
+    </section>
+
+    <!-- Browse by Dress Style Section -->
+    <section class="dress-style container">
+      <h2>Browse by Dress Style</h2>
+      <div class="flex">
+        <div class="dress-card">
+          <img src="https://placehold.co/350x350" alt="Casual" />
+          <h3>Casual</h3>
+        </div>
+        <div class="dress-card">
+          <img src="https://placehold.co/350x350" alt="Formal" />
+          <h3>Formal</h3>
+        </div>
+        <!-- Add more dress cards as needed -->
+      </div>
+    </section>
+
+    <!-- Happy Customers Section -->
+    <section class="happy-customers container">
+      <h2>Our Happy Customers</h2>
+      <div class="flex justify-between">
+        <!-- Each testimonial -->
+        <div class="testimonial-card">
+          <p>
+            "I'm blown away by the quality and style of the clothes I received
+            from Shop.co."
+          </p>
+          <h3>Sarah M.</h3>
+        </div>
+        <div class="testimonial-card">
+          <p>
+            "Finding clothes that align with my personal style used to be a
+            challenge until I discovered Shop.co."
+          </p>
+          <h3>Alex K.</h3>
+        </div>
+        <!-- Add more testimonials as needed -->
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="container">
+      <section class="newsletter">
+        <h3>Stay up to date about our latest offers</h3>
+        <form>
+          <input type="email" placeholder="Enter your email address" />
+          <button type="submit">Subscribe to Newsletter</button>
+        </form>
+      </section>
+      <section class="footer-links">
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Help</h3>
+          <ul>
+            <li><a href="#">Customer Support</a></li>
+            <li><a href="#">Delivery Details</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>FAQ</h3>
+          <ul>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Manage Deliveries</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Payments</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Free eBooks</a></li>
+            <li><a href="#">Development Tutorial</a></li>
+            <li><a href="#">How-to Blog</a></li>
+            <li><a href="#">YouTube Playlist</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="footer-bottom">
+        <p>&copy; Shop.co © 2000-2021, All rights reserved</p>
+        <div class="payment-methods">
+          <img src="images/footer/visa.svg" alt="Visa" />
+          <img src="images/footer/master.svg" alt="MasterCard" />
+          <img src="images/footer/paypal.svg" alt="PayPal" />
+          <img src="images/footer/applePay.svg" alt="Apple Pay" />
+          <img src="images/footer/googlePay.svg" alt="Google Pay" />
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

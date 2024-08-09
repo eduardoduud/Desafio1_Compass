@@ -1,0 +1,421 @@
+@font-face {
+  font-family: "Integral CF";
+  src: url("fonts/integralcf-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Integral CF";
+  src: url("fonts/integralcf-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("fonts/satoshi-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("fonts/satoshi-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Satoshi";
+  line-height: 1.6;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Utility Classes */
+.container {
+  width: 60%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.hero-container {
+  width: 60%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+/* Header */
+header {
+  padding-bottom: 10px 0;
+}
+
+.header-top {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.header-links a {
+  margin-left: 20px;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  font-family: "Integral CF";
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 40px;
+}
+
+.search-bar {
+  display: flex;
+  background-color: #f2f0f1;
+  flex-grow: 1;
+  text-align: left;
+  border-radius: 20px;
+}
+
+.search-bar img {
+  padding: 8px;
+  margin-left: 5px;
+  align-items: center;
+}
+
+.search-bar input {
+  all: unset;
+  opacity: 40%;
+  font-family: "Satoshi";
+  padding: 8px;
+  width: 300px;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #f2f0f1;
+  background-image: url("images/heroBackground.svg");
+  background-position: 55%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  height: 70vh;
+}
+
+.hero-vector1 {
+  position: absolute;
+  left: 52.08%;
+  right: 44.03%;
+  top: 49.86%;
+  bottom: 88.86%;
+}
+
+.hero-vector2 {
+  position: absolute;
+  left: 82.15%;
+  right: 15.62%;
+  top: 25.03%;
+  bottom: 92.59%;
+}
+
+.hero-content h1 {
+  font-family: "Integral CF";
+  margin-top: 20px;
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.hero-content p {
+  font-size: 0.8rem;
+  opacity: 60%;
+  margin: 20px 0;
+  width: 34%;
+}
+
+.hero-content button {
+  padding: 10px 20px;
+  font-family: "Satoshi";
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 62px;
+  width: 210px;
+  height: 52px;
+}
+
+.hero-stats {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  margin-top: 50px;
+  width: 35%;
+}
+
+.hero-stats div {
+  margin: 10px;
+}
+
+.hero-stats h2 {
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-stats hr {
+  width: 1px;
+  height: 70px;
+  margin: 0 auto;
+  border: none;
+  background-color: black;
+  opacity: 10%;
+}
+
+.hero-stats p {
+  font-size: 0.8rem;
+  opacity: 60%;
+  margin: 1px 0;
+  width: 100%;
+}
+
+/* Brands Section */
+.brands {
+  display: flex;
+  background-color: #000000;
+  justify-content: space-evenly;
+  height: 122px;
+  align-items: center;
+}
+
+.brands img {
+  width: 120px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* New Arrivals Section */
+.new-arrivals h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: "Integral CF";
+  font-weight: bold;
+}
+
+.product-card {
+  width: 250px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.product-info {
+  margin-top: 10px;
+}
+
+.product-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.product-info p {
+  font-size: 1rem;
+}
+
+.product-info .discount {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 5px;
+}
+
+.view-all {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Top Selling Section */
+.top-selling h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: "Integral CF";
+  font-weight: bold;
+}
+
+/* Browse by Dress Style Section */
+.dress-style h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.dress-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.dress-card h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Happy Customers Section */
+.happy-customers h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.testimonial-card {
+  width: 250px;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.testimonial-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Footer Section */
+footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  background-color: #f8f8f8;
+}
+
+.newsletter h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.newsletter form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.newsletter input {
+  padding: 10px;
+  width: 300px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  opacity: 60%;
+}
+
+.payment-methods img {
+  width: 66.61px;
+  height: 50.03px;
+}
