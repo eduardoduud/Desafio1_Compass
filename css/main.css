@@ -1,0 +1,59 @@
+/* New Arrivals Section */
+.new-arrivals h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: "Integral CF";
+  font-weight: bold;
+}
+
+.product-card {
+  width: 250px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.product-info {
+  margin-top: 10px;
+}
+
+.product-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.product-info p {
+  font-size: 1rem;
+}
+
+.product-info .discount {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 5px;
+}
+
+.view-all {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Top Selling Section */
+.top-selling h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: "Integral CF";
+  font-weight: bold;
+}

@@ -1,0 +1,18 @@
+.happy-customers h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.testimonial-card {
+  width: 250px;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.testimonial-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
