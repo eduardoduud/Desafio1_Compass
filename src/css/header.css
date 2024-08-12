@@ -1,0 +1,57 @@
+header {
+  padding-bottom: 10px 0;
+}
+
+.header-top {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.header-links a {
+  margin-left: 20px;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Integral CF";
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 40px;
+}
+
+.search-bar {
+  display: flex;
+  background-color: #f2f0f1;
+  flex-grow: 1;
+  text-align: left;
+  border-radius: 20px;
+}
+
+.search-bar img {
+  padding: 8px;
+  margin-left: 5px;
+  align-items: center;
+}
+
+.search-bar input {
+  all: unset;
+  opacity: 40%;
+  font-family: "Satoshi";
+  padding: 8px;
+  width: 300px;
+}
