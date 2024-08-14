@@ -86,3 +86,10 @@ a {
 .mb-4 {
   margin-bottom: 2rem;
 }
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    width: 90%;
+  }
+}

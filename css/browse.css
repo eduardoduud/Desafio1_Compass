@@ -1,0 +1,104 @@
+.dress-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  background-color: #f0f0f0;
+  border-radius: 40px;
+  width: 60%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.categories-container {
+  width: 90%;
+  margin: 4%;
+}
+
+.dress-card {
+  position: relative;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.dress-style h2 {
+  font-size: 2.5rem;
+  margin-top: 55px;
+  font-family: "Integral CF";
+  font-weight: bold;
+}
+
+.dress-card h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 30px;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.dress-card img {
+  border-radius: 20px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .dress-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 40px;
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .categories-container {
+    width: 100%;
+    gap: 16px;
+    margin: 10px auto 22px auto;
+  }
+
+  .dress-card {
+    position: relative;
+    cursor: pointer;
+    margin: 0 0;
+    width: 310px;
+    height: 190px;
+  }
+
+  .dress-style h2 {
+    font-size: 2.2rem;
+    line-height: 1.1;
+    margin: 40px 40px 0;
+    font-family: "Integral CF";
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .dress-card h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .dress-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    object-fit: cover;
+  }
+}

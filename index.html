@@ -15,18 +15,19 @@
   </head>
 
   <body>
-    <!-- Header Section -->
     <header>
       <div class="header-top">
-        <div>
-          <span
-            >Sign up and get 20% off your first order.
-            <a href="#"><u>Sign Up Now</u></a></span
-          >
-        </div>
+        <span
+          >Sign up and get 20% off your first order.
+          <a href="#"><u>Sign Up Now</u></a></span
+        >
+        <button><img src="assets/icons/header/closeX.svg" alt="X" /></button>
       </div>
       <div class="header-bottom container">
-        <div class="logo">SHOP.CO</div>
+        <div class="logo">
+          <div class="menu-icon">&#9776;</div>
+          <h2>SHOP.CO</h2>
+        </div>
         <nav>
           <ul class="flex justify-between">
             <li>
@@ -44,6 +45,7 @@
           <input type="search" placeholder="Search for products..." />
         </div>
         <div class="header-links">
+          <button><img src="assets/icons/header/search.svg" alt="" /></button>
           <a href="#"><img src="assets/icons/header/cart.svg" alt="Cart" /></a>
           <a href="#"
             ><img src="assets/icons/header/login.svg" alt="Login"
@@ -52,7 +54,6 @@
       </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
       <img class="hero-vector1" src="assets/images/hero/star1.svg" alt="" />
       <img class="hero-vector2" src="assets/images/hero/star2.svg" alt="" />
@@ -77,7 +78,7 @@
             <h2>2,000+</h2>
             <p>High-Quality Products</p>
           </div>
-          <hr />
+          <hr class="mobile-hr" />
           <div>
             <h2>30,000+</h2>
             <p>Happy Customers</p>
@@ -86,7 +87,6 @@
       </div>
     </section>
 
-    <!-- Brands Section -->
     <section id="brands" class="brands">
       <img src="assets/images/brands/versace.svg" alt="Versace" />
       <img src="assets/images/brands/zara.svg" alt="Zara" />
@@ -95,11 +95,9 @@
       <img src="assets/images/brands/ck.svg" alt="Calvin Klein" />
     </section>
 
-    <!-- New Arrivals Section -->
     <section id="arrivals" class="new-arrivals container">
       <h2>New Arrivals</h2>
       <div class="flex justify-evenly">
-        <!-- Each item in the New Arrivals -->
         <div class="product-card">
           <img
             src="assets/images/main/arrivals/tshirt.svg"
@@ -148,11 +146,9 @@
     </section>
 
     <hr class="custom-hr" />
-    <!-- Top Selling Section -->
     <section id="selling" class="top-selling container">
       <h2>Top Selling</h2>
       <div class="flex justify-evenly">
-        <!-- Each item in the Top Selling -->
         <div class="product-card">
           <img
             src="assets/images/main/selling/verticalStriped.svg"
@@ -197,7 +193,6 @@
       <button class="view-all">View All</button>
     </section>
 
-    <!-- Browse by Dress Style Section -->
     <section class="dress-style dress-container">
       <h2>Browse by Dress Style</h2>
       <div class="flex justify-evenly categories-container">
@@ -219,8 +214,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Happy Customers Section -->
     <section class="carousel-container" aria-label="Customer Testimonials">
       <div class="carousel-nav">
         <h2>OUR HAPPY CUSTOMERS</h2>
@@ -234,21 +227,20 @@
         </nav>
       </div>
       <div class="carousel">
-        <article class="carousel-item">
+        <article class="carousel-item blur">
           <div class="stars">★★★★★</div>
           <h3 class="customer-name">
-            Sarah M.
+            Eduardo D.
             <span
               ><img src="assets/icons/testimonials/verified.svg" alt=""
             /></span>
           </h3>
           <p>
-            "I'm blown away by the quality and style of the clothes I received
-            from Shop.co. From casual wear to elegant dresses, every piece I've
-            bought has exceeded my expectations.”
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.”
           </p>
         </article>
-        <article class="carousel-item">
+        <article class="carousel-item blur">
           <div class="stars">★★★★★</div>
           <h3 class="customer-name">
             Sarah M.
@@ -277,7 +269,7 @@
             occasions.”
           </p>
         </article>
-        <article class="carousel-item">
+        <article class="carousel-item blur">
           <div class="stars">★★★★★</div>
           <h3 class="customer-name">
             James L.
@@ -291,10 +283,55 @@
             is not only diverse but also on-point with the latest trends.”
           </p>
         </article>
-        <article class="carousel-item">
+        <article class="carousel-item blur">
           <div class="stars">★★★★★</div>
           <h3 class="customer-name">
-            John Doe.
+            Johanna Doe.
+            <span
+              ><img src="assets/icons/testimonials/verified.svg" alt=""
+            /></span>
+          </h3>
+          <p>
+            "I've been shopping online for years and I can honestly say that
+            Shop.co has exceeded my expectations. The selection is unmatched,
+            and the customer service is exceptional. I highly recommend Shop.co
+            to anyone looking for a unique and stylish wardrobe."
+          </p>
+        </article>
+        <article class="carousel-item blur">
+          <div class="stars">★★★★★</div>
+          <h3 class="customer-name">
+            Clohanna Flo.
+            <span
+              ><img src="assets/icons/testimonials/verified.svg" alt=""
+            /></span>
+          </h3>
+          <p>
+            "I've been shopping online for years and I can honestly say that
+            Shop.co has exceeded my expectations. The selection is unmatched,
+            and the customer service is exceptional. I highly recommend Shop.co
+            to anyone looking for a unique and stylish wardrobe."
+          </p>
+        </article>
+        <article class="carousel-item blur">
+          <div class="stars">★★★★★</div>
+          <h3 class="customer-name">
+            Doe John.
+            <span
+              ><img src="assets/icons/testimonials/verified.svg" alt=""
+            /></span>
+          </h3>
+          <p>
+            "I've been shopping online for years and I can honestly say that
+            Shop.co has exceeded my expectations. The selection is unmatched,
+            and the customer service is exceptional. I highly recommend Shop.co
+            to anyone looking for a unique and stylish wardrobe."
+          </p>
+        </article>
+        <article class="carousel-item blur">
+          <div class="stars">★★★★★</div>
+          <h3 class="customer-name">
+            Krilson Son.
             <span
               ><img src="assets/icons/testimonials/verified.svg" alt=""
             /></span>
@@ -308,71 +345,88 @@
         </article>
       </div>
     </section>
-
-    <!-- Footer Section -->
-    <footer class="container">
-      <section class="newsletter">
-        <h3>
-          STAY UPTO DATE ABOUT <br />
-          OUR LATEST OFFERS
-        </h3>
-        <form>
-          <div class="newsletter-email-border">
-            <img src="assets/icons/footer/email.svg" alt="" />
-            <input type="email" placeholder="Enter your email address" />
+    <footer>
+      <div class="container">
+        <section class="newsletter">
+          <h3>
+            STAY UP TO DATE ABOUT <br />
+            OUR LATEST OFFERS
+          </h3>
+          <form onsubmit="return validateEmail()">
+            <div class="newsletter-email-border">
+              <img src="assets/icons/footer/email.svg" alt="Email Icon" />
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+            <button type="submit">Subscribe to Newsletter</button>
+          </form>
+        </section>
+        <section class="footer-links">
+          <div class="footer-socials">
+            <h3>SHOP.CO</h3>
+            <p>
+              We have clothes that suits your style and which you’re proud to
+              wear. From women to men.
+            </p>
+            <img src="assets/icons/footer/twitter.svg" alt="Twitter" />
+            <img src="assets/icons/footer/facebook.svg" alt="Facebook" />
+            <img src="assets/icons/footer/instagram.svg" alt="Instagram" />
+            <img src="assets/icons/footer/github.svg" alt="Github" />
           </div>
-          <button type="submit">Subscribe to Newsletter</button>
-        </form>
-      </section>
-      <section class="footer-links">
-        <div class="footer-column">
-          <h3>COMPANY</h3>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Career</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>HELP</h3>
-          <ul>
-            <li><a href="#">Customer Support</a></li>
-            <li><a href="#">Delivery Details</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>FAQ</h3>
-          <ul>
-            <li><a href="#">Account</a></li>
-            <li><a href="#">Manage Deliveries</a></li>
-            <li><a href="#">Orders</a></li>
-            <li><a href="#">Payments</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>RESOURCES</h3>
-          <ul>
-            <li><a href="#">Free eBooks</a></li>
-            <li><a href="#">Development Tutorial</a></li>
-            <li><a href="#">How-to Blog</a></li>
-            <li><a href="#">YouTube Playlist</a></li>
-          </ul>
-        </div>
-      </section>
-      <section class="footer-bottom">
-        <p>&copy; Shop.co © 2000-2021, All rights reserved</p>
-        <div class="payment-methods">
-          <img src="assets/images/footer/visa.svg" alt="Visa" />
-          <img src="assets/images/footer/master.svg" alt="MasterCard" />
-          <img src="assets/images/footer/paypal.svg" alt="PayPal" />
-          <img src="assets/images/footer/applePay.svg" alt="Apple Pay" />
-          <img src="assets/images/footer/googlePay.svg" alt="Google Pay" />
-        </div>
-      </section>
+          <div class="footer-column">
+            <h3>COMPANY</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Works</a></li>
+              <li><a href="#">Career</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>HELP</h3>
+            <ul>
+              <li><a href="#">Customer Support</a></li>
+              <li><a href="#">Delivery Details</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>FAQ</h3>
+            <ul>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Manage Deliveries</a></li>
+              <li><a href="#">Orders</a></li>
+              <li><a href="#">Payments</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>RESOURCES</h3>
+            <ul>
+              <li><a href="#">Free eBooks</a></li>
+              <li><a href="#">Development Tutorial</a></li>
+              <li><a href="#">How-to Blog</a></li>
+              <li><a href="#">YouTube Playlist</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer-bottom">
+          <p>&copy; Shop.co © 2000-2021, All rights reserved</p>
+          <div class="payment-methods">
+            <img src="assets/images/footer/visa.svg" alt="Visa" />
+            <img src="assets/images/footer/master.svg" alt="MasterCard" />
+            <img src="assets/images/footer/paypal.svg" alt="PayPal" />
+            <img src="assets/images/footer/applePay.svg" alt="Apple Pay" />
+            <img src="assets/images/footer/googlePay.svg" alt="Google Pay" />
+          </div>
+        </section>
+      </div>
     </footer>
-    <script src="/src/js/carousel.js"></script>
+    <script src="/js/carousel.js"></script>
+    <script src="/js/validateEmail.js"></script>
   </body>
 </html>

@@ -1,0 +1,164 @@
+/* New Arrivals Section */
+.new-arrivals h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: "Integral CF";
+  font-weight: bold;
+  margin: 50px auto;
+}
+
+.product-card {
+  width: 250px;
+  cursor: pointer;
+}
+
+.product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.product-info {
+  margin-top: 10px;
+}
+
+.product-info h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.product-info div img {
+  width: 15px;
+  height: 15px;
+}
+
+.product-info p {
+  font-size: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.product-info .discount {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 5px;
+}
+
+.view-all {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 54px;
+  gap: 12px;
+  margin: 30px auto 60px auto;
+  border: 1px rgba(0, 0, 0, 0.15);
+  border-style: solid;
+  border-radius: 62px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.custom-hr {
+  width: 60%;
+  opacity: 0.15;
+  border: none;
+  height: 1px;
+  background-color: black;
+  margin: 0 auto;
+}
+
+/* Top Selling Section */
+.top-selling h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin: 50px auto;
+  font-family: "Integral CF";
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  /* New Arrivals Section */
+  .new-arrivals h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: "Integral CF";
+    font-weight: bold;
+    margin: 50px auto;
+  }
+
+  .product-card {
+    width: 45%;
+    height: 200px;
+    margin-bottom: 125px;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .product-info {
+    margin-top: 10px;
+  }
+
+  .product-info h3 {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .product-info div img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .product-info p {
+    font-size: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  .product-info .discount {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 5px;
+  }
+
+  .view-all {
+    max-width: 390px;
+    width: 90%;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    padding: 10px;
+  }
+
+  .custom-hr {
+    width: 90%;
+    opacity: 0.15;
+    border: none;
+    height: 1px;
+    background-color: black;
+    margin: 0 auto;
+  }
+
+  /* Top Selling Section */
+  .top-selling h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin: 50px auto;
+    font-family: "Integral CF";
+    font-weight: bold;
+  }
+}

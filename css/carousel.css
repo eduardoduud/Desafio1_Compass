@@ -21,14 +21,14 @@
 
 .carousel {
   display: flex;
-  margin-left: -15px;
   max-width: 1440px;
+  gap: 10px;
   transition: transform 0.5s ease;
 }
 
 .carousel-item {
   min-width: 400px;
-  margin: 0 10px;
+  margin: 0 0;
   padding: 20px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 20px;
@@ -62,4 +62,36 @@ carousel-controls button:hover,
   border: none;
   padding: 10px;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    position: relative;
+    width: 90%;
+    margin: 60px auto;
+  }
+
+  .carousel-container h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .carousel {
+    display: flex;
+    margin-left: 0;
+    gap: 10px;
+    transition: transform 0.5s ease;
+  }
+
+  .carousel-item {
+    min-width: 358px;
+    margin: 0 0px;
+  }
+
+  .carousel-controls button {
+    background-color: transparent;
+    border: none;
+    padding: 3px 10px;
+    cursor: pointer;
+  }
 }
