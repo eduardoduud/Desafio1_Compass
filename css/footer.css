@@ -33,11 +33,10 @@ footer {
   align-items: center;
   background-color: #ffff;
   border-radius: 62px;
-  width: 349px;
 }
 
 .newsletter-email-border img {
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 .newsletter input {
@@ -171,4 +170,46 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 25px;
+  }
+
+  .newsletter h3 {
+    font-size: 1.9rem;
+    margin-bottom: 32px;
+  }
+
+  .newsletter form {
+    width: 311px;
+  }
+
+  .newsletter form button {
+    width: 311px;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-column {
+    width: 45%;
+  }
+
+  .footer-bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .payment-methods {
+    margin-top: 10px;
+  }
+  .payment-methods img {
+    margin-left: 5px;
+  }
 }

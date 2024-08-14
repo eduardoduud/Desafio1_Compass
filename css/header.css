@@ -97,6 +97,10 @@ nav ul {
 
   .header-top {
     font-size: 0.8rem;
+    padding: 5px;
+  }
+  .header-top button {
+    display: none;
   }
 
   .menu-icon {
@@ -111,8 +115,7 @@ nav ul {
     align-items: center;
   }
 
-  nav,
-  ul li {
+  .header-bottom nav {
     display: none;
   }
 
