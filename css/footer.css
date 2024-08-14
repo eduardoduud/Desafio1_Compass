@@ -1,7 +1,7 @@
 footer {
   margin-top: 40px;
   padding: 20px 0;
-  background-color: #f8f8f8;
+  background: linear-gradient(0deg, #f0f0f0 80%, #ffff 80%);
 }
 
 .newsletter {

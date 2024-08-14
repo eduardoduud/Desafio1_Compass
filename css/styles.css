@@ -26,7 +26,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
   height: 10px;
 }
 
@@ -37,12 +37,10 @@
 
 ::-webkit-scrollbar-track-piece {
   background-color: #3b3b3b;
-  -webkit-border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:vertical {
   background-color: #666;
-  -webkit-border-radius: 6px;
 }
 
 * {
