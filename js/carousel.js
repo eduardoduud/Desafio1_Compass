@@ -7,7 +7,7 @@ const [prevBtn, nextBtn] = [
 const gap = parseFloat(window.getComputedStyle(carousel).gap) || 0;
 const windowWidth = window.innerWidth;
 
-let currentIndex = 3;
+let currentIndex = 2;
 
 nextBtn.addEventListener("click", () => {
   if (currentIndex < items.length - 3) {

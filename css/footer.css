@@ -82,12 +82,37 @@ footer {
   font-weight: bold;
   font-size: 2rem;
   line-height: 0.6;
-  margin-bottom: 20px;
 }
 
 .footer-socials p {
   font-size: 0.9rem;
   opacity: 60%;
+  margin: 20px 0px;
+}
+
+.footer-socials div {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.footer-socials a {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px rgba(0, 0, 0, 0.15);
+  border-style: solid;
+  border-radius: 62px;
+  cursor: pointer;
+}
+
+.footer-socials img {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
 }
 
 .footer-column {
