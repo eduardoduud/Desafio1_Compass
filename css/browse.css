@@ -20,6 +20,17 @@
   position: relative;
   cursor: pointer;
   margin: 5px 0;
+  transition: 0.25s ease-in-out;
+}
+
+.dress-card:hover {
+  scale: 0.95;
+  transition: 0.25s ease-in-out;
+}
+
+.dress-card:active {
+  scale: 0.93;
+  transition: 0.15s ease-in-out;
 }
 
 .dress-style h2 {

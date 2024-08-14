@@ -59,9 +59,12 @@
 carousel-controls button:hover,
 .carousel-controls button {
   background-color: transparent;
+  color: black;
   border: none;
   padding: 10px;
   cursor: pointer;
+  filter: none !important;
+  transition: 0.1s;
 }
 
 @media (max-width: 768px) {

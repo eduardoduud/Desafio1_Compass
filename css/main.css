@@ -19,10 +19,25 @@
   height: 300px;
   object-fit: cover;
   border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.product-card img:hover {
+  scale: 1.05;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-card img:active {
+  scale: 1;
+  transition: 0.15 ease-in-out;
 }
 
 .product-info {
   margin-top: 10px;
+}
+
+.product-info:hover {
+  text-decoration: underline;
 }
 
 .product-info h3 {
@@ -48,18 +63,18 @@
 }
 
 .view-all {
-  all: unset;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 12px 54px;
-  gap: 12px;
   margin: 30px auto 60px auto;
   border: 1px rgba(0, 0, 0, 0.15);
   border-style: solid;
   border-radius: 62px;
+  background-color: #ffffff;
   cursor: pointer;
-  width: fit-content;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
 .custom-hr {

@@ -158,7 +158,15 @@
   font-weight: bold;
 }
 
-.hero-stats hr {
+.desktop-hr {
+  width: 1px;
+  height: 70px;
+  margin: 0 auto;
+  background-color: black;
+  opacity: 30%;
+}
+
+.mobile-hr {
   width: 1px;
   height: 70px;
   margin: 0 auto;
@@ -176,12 +184,12 @@
 @media (max-width: 768px) {
   .hero {
     background-color: #f2f0f1;
-    background-image: url("../assets/images/hero/heroBackground.svg");
-    background-position: bottom left 83%;
+    background-image: url("../assets/images/hero/heroMobile.svg");
+    background-position: bottom;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    height: 130vh;
+    height: 100vh;
   }
 
   .hero-vector1 {
@@ -216,7 +224,6 @@
 
   .hero-content button {
     padding: 10px 20px;
-    font-family: "Satoshi";
     background-color: #000;
     color: #fff;
     border: none;
@@ -246,7 +253,8 @@
     font-weight: bold;
   }
 
-  .hero-stats hr {
+  .desktop-hr {
+    all: unset;
     width: 1px;
     height: 55px;
     margin: 0 auto;

@@ -108,10 +108,19 @@ footer {
   cursor: pointer;
 }
 
+.footer-socials a:hover {
+  background-color: silver;
+  transition: 0.15s;
+}
+
 .footer-socials img {
   display: flex;
   flex-direction: row;
   gap: 12px;
+}
+
+.footer-socials img:hover {
+  transition: 0.15s;
 }
 
 .footer-column {
