@@ -21,7 +21,9 @@
           >Sign up and get 20% off your first order.
           <a href="#"><u>Sign Up Now</u></a></span
         >
-        <button><img src="assets/icons/header/closeX.svg" alt="X" /></button>
+        <button class="close-btn">
+          <img src="assets/icons/header/closeX.svg" alt="X" />
+        </button>
       </div>
       <div class="header-bottom container">
         <div class="logo">
@@ -29,11 +31,17 @@
           <h2>SHOP.CO</h2>
         </div>
         <nav>
-          <ul class="flex justify-between">
+          <ul class="menu-nav">
             <li>
               <a href="#"
-                >Shop <img src="assets/icons/header/downArrow.svg" alt="teste"
+                >Shop <img src="assets/icons/header/downArrow.svg" alt=""
               /></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Category 1</a></li>
+                <li><a href="#">Category 2</a></li>
+                <li><a href="#">Category 3</a></li>
+                <li><a href="#">Category 4</a></li>
+              </ul>
             </li>
             <li><a href="#selling">On Sale</a></li>
             <li><a href="#arrivals">New Arrivals</a></li>
@@ -427,5 +435,6 @@
     </footer>
     <script src="js/carousel.js"></script>
     <script src="js/validateEmail.js"></script>
+    <script src="js/header.js"></script>
   </body>
 </html>

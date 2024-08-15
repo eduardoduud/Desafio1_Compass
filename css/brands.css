@@ -2,7 +2,7 @@
   display: flex;
   background-color: #000000;
   justify-content: space-evenly;
-  height: 122px;
+  height: 15vh;
   align-items: center;
 }
 
@@ -17,7 +17,6 @@
     flex-wrap: wrap;
     background-color: #000000;
     justify-content: space-evenly;
-    height: 146px;
     align-items: center;
   }
 
