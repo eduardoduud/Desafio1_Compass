@@ -12,6 +12,7 @@ footer {
   background-color: #000;
   border-radius: 20px;
   color: #fff;
+  margin: auto 0px;
 }
 
 .newsletter h3 {
@@ -20,6 +21,7 @@ footer {
   font-family: "Integral CF";
   font-weight: bold;
   margin: 0;
+  width: 50%;
 }
 
 .newsletter form {
@@ -178,6 +180,18 @@ footer {
   height: auto;
 }
 
+@media (max-width: 1440px) {
+  .newsletter {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .footer-links {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 768px) {
   .newsletter {
     display: flex;
@@ -185,11 +199,14 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 25px 25px;
+    width: 98%;
+    margin: 0 auto;
   }
 
   .newsletter h3 {
     font-size: 1.9rem;
     margin-bottom: 32px;
+    width: 100%;
   }
 
   .newsletter form {

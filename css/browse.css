@@ -57,6 +57,16 @@
   border: none;
 }
 
+@media (max-width: 1440px) {
+  .dress-container {
+    width: 90%;
+  }
+
+  .categories-container {
+    width: 85%;
+  }
+}
+
 @media (max-width: 768px) {
   .dress-container {
     display: flex;
@@ -77,7 +87,6 @@
   }
 
   .dress-card {
-    position: relative;
     cursor: pointer;
     margin: 0 0;
     width: 310px;

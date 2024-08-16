@@ -85,7 +85,7 @@
 }
 
 .custom-hr {
-  width: 60%;
+  width: 85%;
   opacity: 0.15;
   border: none;
   height: 1px;
@@ -167,11 +167,6 @@
 
   .custom-hr {
     width: 90%;
-    opacity: 0.15;
-    border: none;
-    height: 1px;
-    background-color: black;
-    margin: 0 auto;
   }
 
   /* Top Selling Section */
