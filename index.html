@@ -50,7 +50,11 @@
         </nav>
         <div class="search-bar">
           <img src="assets/icons/header/search.svg" alt="" />
-          <input type="search" placeholder="Search for products..." />
+          <input
+            id="search"
+            type="search"
+            placeholder="Search for products..."
+          />
         </div>
         <div class="header-links">
           <button><img src="assets/icons/header/search.svg" alt="" /></button>
@@ -105,99 +109,14 @@
 
     <section id="arrivals" class="new-arrivals container">
       <h2>New Arrivals</h2>
-      <div class="flex justify-evenly">
-        <div class="product-card">
-          <img
-            src="assets/images/main/arrivals/tshirt.svg"
-            alt="T-shirt with Tape Details"
-          />
-          <div class="product-info">
-            <h3>T-shirt with Tape Details</h3>
-            <div>
-              <img src="assets/icons/main/fullStar.svg" alt="" />
-            </div>
-            <p>$120</p>
-          </div>
-        </div>
-        <div class="product-card">
-          <img
-            src="assets/images/main/arrivals/jeans.svg"
-            alt="Skinny Fit Jeans"
-          />
-          <div class="product-info">
-            <h3>Skinny Fit Jeans</h3>
-            <p>$240 <span class="discount">$260</span></p>
-          </div>
-        </div>
-        <div class="product-card">
-          <img
-            src="assets/images/main/arrivals/checkered.svg"
-            alt="Checkered Shirt"
-          />
-          <div class="product-info">
-            <h3>Checkered Shirt</h3>
-            <p>$180</p>
-          </div>
-        </div>
-        <div class="product-card">
-          <img
-            src="assets/images/main/arrivals/sleeve.svg"
-            alt="Sleeve Striped T-shirt"
-          />
-          <div class="product-info">
-            <h3>Sleeve Striped T-shirt</h3>
-            <p>$130 <span class="discount">$160</span></p>
-          </div>
-        </div>
-      </div>
+      <div class="flex justify-evenly"></div>
       <button class="view-all">View All</button>
     </section>
 
     <hr class="custom-hr" />
     <section id="selling" class="top-selling container">
       <h2>Top Selling</h2>
-      <div class="flex justify-evenly">
-        <div class="product-card">
-          <img
-            src="assets/images/main/selling/verticalStriped.svg"
-            alt="Vertical Striped Shirt"
-          />
-          <div class="product-info">
-            <h3>Vertical Striped Shirt</h3>
-            <p>$212 <span class="discount">$232</span></p>
-          </div>
-        </div>
-        <div class="product-card">
-          <img
-            src="assets/images/main/selling/courageTshirt.svg"
-            alt="Courage Graphic T-shirt"
-          />
-          <div class="product-info">
-            <h3>Courage Graphic T-shirt</h3>
-            <p>$145</p>
-          </div>
-        </div>
-        <div class="product-card">
-          <img
-            src="assets/images/main/selling/bermuda.svg"
-            alt="Loose Fit Bermuda Shorts"
-          />
-          <div class="product-info">
-            <h3>Loose Fit Bermuda Shorts</h3>
-            <p>$80</p>
-          </div>
-        </div>
-        <div class="product-card">
-          <img
-            src="assets/images/main/selling/fadedJeans.svg"
-            alt="Faded Skinny Jeans"
-          />
-          <div class="product-info">
-            <h3>Faded Skinny Jeans</h3>
-            <p>$210</p>
-          </div>
-        </div>
-      </div>
+      <div class="flex justify-evenly"></div>
       <button class="view-all">View All</button>
     </section>
 
@@ -349,13 +268,14 @@
       <div class="container">
         <section class="newsletter">
           <h3>STAY UP TO DATE ABOUT OUR LATEST OFFERS</h3>
-          <form onsubmit="return validateEmail()">
+          <form id="newsletter" onsubmit="return validateEmail()">
             <div class="newsletter-email-border">
               <img src="assets/icons/footer/email.svg" alt="Email Icon" />
               <input
                 type="email"
                 id="email"
                 placeholder="Enter your email address"
+                autocomplete="email"
                 required
               />
             </div>
@@ -433,8 +353,8 @@
         </section>
       </div>
     </footer>
+    <script type="module" src="js/main.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/validateEmail.js"></script>
-    <script src="js/header.js"></script>
   </body>
 </html>

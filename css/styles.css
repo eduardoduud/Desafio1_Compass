@@ -97,6 +97,22 @@ a {
   margin: 0 auto;
 }
 
+.star {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.star.full {
+  background-image: url("../assets/icons/main/fullStar.svg");
+}
+
+.star.half {
+  background-image: url("../assets/icons/main/halfStar.svg");
+  background-repeat: no-repeat;
+}
+
 .flex {
   display: flex;
   flex-wrap: wrap;
