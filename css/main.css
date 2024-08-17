@@ -9,9 +9,24 @@
   margin: 50px auto;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-card.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
 .product-card {
-  width: 250px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .product-card img {
@@ -53,7 +68,6 @@
 .product-info p {
   font-size: 1rem;
   font-weight: bold;
-  font-size: 1.1rem;
 }
 
 .rate-span,
@@ -162,7 +176,6 @@
   .product-info p {
     font-size: 1rem;
     font-weight: bold;
-    font-size: 1.1rem;
   }
 
   .product-info .discount {

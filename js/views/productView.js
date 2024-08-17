@@ -3,10 +3,14 @@ export class ProductView {
     const topSellingSection = document.querySelector(".top-selling");
     const newArrivalsSection = document.querySelector(".new-arrivals");
 
-    topSellingSection.querySelector(".flex").innerHTML =
-      this.createProductCard(topSellingProducts);
+    topSellingSection.querySelector(".flex").innerHTML = this.createProductCard(
+      topSellingProducts,
+      "fade-in"
+    );
     newArrivalsSection.querySelector(".flex").innerHTML =
-      this.createProductCard(newArrivalsProducts);
+      this.createProductCard(newArrivalsProducts, "fade-in");
+
+    this.bindShowMoreButtons();
   }
 
   createProductCard(products) {
@@ -21,20 +25,29 @@ export class ProductView {
           product.rate
         }/5</span></p>
           <p class="flex">$${formatPrice(product.price)}
-                    ${
-                      typeof product.fullPrice === "number"
-                        ? `<span class="discount">$${product.fullPrice}</span>
-                        <span class="discount-percentage">${calculateDiscountPercentage(
-                          product.price,
-                          product.fullPrice
-                        )}%`
-                        : ""
-                    }</p>
+            ${
+              typeof product.fullPrice === "number"
+                ? `<span class="discount">$${product.fullPrice}</span>
+                    <span class="discount-percentage">${calculateDiscountPercentage(
+                      product.price,
+                      product.fullPrice
+                    )}%</span>`
+                : ""
+            }</p>
         </div>
       </div>
     `
       )
       .join("");
+  }
+
+  bindShowMoreButtons(showMoreTopSelling, showMoreNewArrivals) {
+    document
+      .querySelector(".top-selling .view-all")
+      .addEventListener("click", showMoreTopSelling);
+    document
+      .querySelector(".new-arrivals .view-all")
+      .addEventListener("click", showMoreNewArrivals);
   }
 }
 

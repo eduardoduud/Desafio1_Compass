@@ -12,13 +12,15 @@ export class ProductModel {
     this.products = products;
   }
 
-  getTopSellingProducts() {
-    return this.products.sort((a, b) => b.rate - a.rate).slice(0, 4);
+  getTopSellingProducts(page, productsPerPage) {
+    return this.products
+      .sort((a, b) => b.rate - a.rate)
+      .slice(0, page * productsPerPage);
   }
 
-  getNewArrivalsProducts() {
+  getNewArrivalsProducts(page, productsPerPage) {
     return this.products
       .sort((a, b) => new Date(b.date) - new Date(a.date))
-      .slice(0, 4);
+      .slice(0, page * productsPerPage);
   }
 }
