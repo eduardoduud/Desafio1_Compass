@@ -266,8 +266,31 @@ li:hover .dropdown-menu {
     display: none;
   }
 
-  .search-bar {
+  .search-bar img {
     display: none;
+  }
+  .search-bar {
+    visibility: hidden;
+    opacity: 0%;
+    width: 180px;
+  }
+
+  .search-bar input {
+    padding: 8px 15px;
+  }
+
+  .search-bar.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-90%);
+    transition: 0.5s ease-in-out;
+  }
+
+  .search-bar.hide {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-70%);
+    transition: 0.5s ease-in-out;
   }
 
   .header-links {
@@ -275,6 +298,7 @@ li:hover .dropdown-menu {
     flex-direction: row;
     align-items: center;
     gap: 0px;
+    margin-left: -160px;
   }
 
   .header-links button {
