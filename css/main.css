@@ -9,21 +9,6 @@
   margin: 50px auto;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.product-card.fade-in {
-  animation: fadeIn 0.5s ease-in-out;
-}
-
 .product-card {
   cursor: pointer;
   margin-bottom: 20px;

@@ -3,12 +3,10 @@ export class ProductView {
     const topSellingSection = document.querySelector(".top-selling");
     const newArrivalsSection = document.querySelector(".new-arrivals");
 
-    topSellingSection.querySelector(".flex").innerHTML = this.createProductCard(
-      topSellingProducts,
-      "fade-in"
-    );
+    topSellingSection.querySelector(".flex").innerHTML =
+      this.createProductCard(topSellingProducts);
     newArrivalsSection.querySelector(".flex").innerHTML =
-      this.createProductCard(newArrivalsProducts, "fade-in");
+      this.createProductCard(newArrivalsProducts);
 
     this.bindShowMoreButtons();
   }
