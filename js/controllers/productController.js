@@ -17,7 +17,7 @@ export class ProductController {
               product.price,
               product.rate,
               product.image,
-              product.discountedPrice,
+              product.fullPrice,
               product.date
             )
         );

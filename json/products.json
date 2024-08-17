@@ -4,60 +4,60 @@
       "image": "assets/images/products/verticalStriped.svg",
       "title": "Vertical Striped Shirt",
       "rate": "5",
-      "price": "$212",
-      "discountedPrice": "$232",
+      "price": 212,
+      "fullPrice": 232,
       "date": "2022-01-01"
     },
     {
       "image": "assets/images/products/courageTshirt.svg",
       "title": "Courage Graphic T-shirt",
       "rate": "4",
-      "price": "$145",
+      "price": 145,
       "date": "2022-01-05"
     },
     {
       "image": "assets/images/products/bermuda.svg",
       "title": "Loose Fit Bermuda Shorts",
       "rate": "3",
-      "price": "$80",
+      "price": 80,
       "date": "2022-01-03"
     },
     {
       "image": "assets/images/products/fadedJeans.svg",
       "title": "Faded Skinny Jeans",
       "rate": "4.5",
-      "price": "$210",
+      "price": 210,
       "date": "2022-01-04"
     },
     {
       "image": "assets/images/products/tshirt.svg",
       "title": "T-shirt with Tape Details",
       "rate": "4.5",
-      "price": "$120",
-      "date": "2022-01-04"
+      "price": 120,
+      "date": "2022-02-10"
     },
     {
       "image": "assets/images/products/jeans.svg",
       "title": "Skinny Fit Jeans",
       "rate": "3.5",
-      "price": "$260",
-
-      "date": "2022-01-04"
+      "price": 240,
+      "fullPrice": 260,
+      "date": "2022-02-09"
     },
     {
       "image": "assets/images/products/checkered.svg",
       "title": "Checkered Shirt",
       "rate": "4.5",
-      "price": "$180",
-      "date": "2022-01-04"
+      "price": 180,
+      "date": "2022-02-08"
     },
     {
       "image": "assets/images/products/sleeve.svg",
       "title": "Sleeve Striped T-shirt",
       "rate": "4.5",
-      "price": "$160",
-      "discountedPrice": "$130",
-      "date": "2022-01-04"
+      "price": 130,
+      "fullPrice": 160,
+      "date": "2022-02-07"
     }
   ]
 }

@@ -1,10 +1,10 @@
 export class ProductModel {
-  constructor(title, price, rate, image, discountedPrice, date) {
+  constructor(title, price, rate, image, fullPrice, date) {
     this.title = title;
     this.price = price;
     this.rate = rate;
     this.image = image;
-    this.discountedPrice = discountedPrice;
+    this.fullPrice = fullPrice;
     this.date = date;
   }
 

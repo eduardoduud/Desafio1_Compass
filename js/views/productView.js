@@ -3,63 +3,38 @@ export class ProductView {
     const topSellingSection = document.querySelector(".top-selling");
     const newArrivalsSection = document.querySelector(".new-arrivals");
 
-    topSellingSection.querySelector(".flex").innerHTML = "";
-    newArrivalsSection.querySelector(".flex").innerHTML = "";
-
-    topSellingProducts.forEach((product) => {
-      const productCard = this.createProductCard(product);
-      topSellingSection.querySelector(".flex").appendChild(productCard);
-    });
-
-    newArrivalsProducts.forEach((product) => {
-      const productCard = this.createProductCard(product);
-      newArrivalsSection.querySelector(".flex").appendChild(productCard);
-    });
+    topSellingSection.querySelector(".flex").innerHTML =
+      this.createProductCard(topSellingProducts);
+    newArrivalsSection.querySelector(".flex").innerHTML =
+      this.createProductCard(newArrivalsProducts);
   }
 
-  createProductCard(product) {
-    const productCard = document.createElement("div");
-    productCard.classList.add("product-card");
-
-    const productImage = document.createElement("img");
-    productImage.src = product.image;
-    productImage.alt = product.title;
-    productCard.appendChild(productImage);
-
-    const productInfo = document.createElement("div");
-    productInfo.classList.add("product-info");
-
-    const productTitle = document.createElement("h3");
-    productTitle.textContent = product.title;
-    productInfo.appendChild(productTitle);
-
-    const productRate = document.createElement("p");
-    productRate.innerHTML = generateStars(product.rate);
-
-    const rateSpan = document.createElement("span");
-    rateSpan.textContent = `${product.rate}/5`;
-    rateSpan.classList.add("rate-span");
-    productRate.appendChild(rateSpan);
-
-    productInfo.appendChild(productRate);
-
-    if (product.discountedPrice) {
-      const discountedPrice = document.createElement("p");
-      const discountSpan = document.createElement("span");
-      discountSpan.classList.add("discount");
-      discountSpan.textContent = product.discountedPrice;
-      discountedPrice.textContent = `${product.price} `;
-      discountedPrice.appendChild(discountSpan);
-      productInfo.appendChild(discountedPrice);
-    } else {
-      const price = document.createElement("p");
-      price.textContent = product.price;
-      productInfo.appendChild(price);
-    }
-
-    productCard.appendChild(productInfo);
-
-    return productCard;
+  createProductCard(products) {
+    return products
+      .map(
+        (product) => `
+      <div class="product-card">
+        <img src="${product.image}" alt="${product.title}">
+        <div class="product-info">
+          <h3>${product.title}</h3>
+          <p>${generateStars(product.rate)} <span class="rate-span">${
+          product.rate
+        }/5</span></p>
+          <p class="flex">$${formatPrice(product.price)}
+                    ${
+                      typeof product.fullPrice === "number"
+                        ? `<span class="discount">$${product.fullPrice}</span>
+                        <span class="discount-percentage">${calculateDiscountPercentage(
+                          product.price,
+                          product.fullPrice
+                        )}%`
+                        : ""
+                    }</p>
+        </div>
+      </div>
+    `
+      )
+      .join("");
   }
 }
 
@@ -78,4 +53,17 @@ function generateStars(rate) {
   }
 
   return starsHTML;
+}
+
+function formatPrice(price) {
+  return price % 1 !== 0 ? price.toFixed(2) : price.toFixed(0);
+}
+
+function calculateDiscountPercentage(price, fullPrice) {
+  if (price > 0 && fullPrice > 0) {
+    const discountAmount = price - fullPrice;
+    const discountPercentage = (discountAmount / price) * 100;
+    return discountPercentage.toFixed(2);
+  }
+  return 0;
 }
