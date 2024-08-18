@@ -12,10 +12,10 @@ The project follows the **MVC (Model-View-Controller)** design pattern, which or
 
 ## Features
 
-- **Product Display**: Showcases a variety of clothing items, including their details such as name, price, rating, and discounted prices.
-- **Responsive Design**: Fully responsive layout adapting to various screen sizes, including mobile devices.
+- **Product Display**: Dinamically showcases a variety of clothing items, including their details such as name, price, rating, and discounted prices.
+- **Responsive Design**: Fully responsive layout adapting to three screen sizes, including mobile devices.
 - **Interactive UI**: Users can interact with various UI components, such as adding items to the cart, searching for products, and browsing different product categories.
-- **Carousel for Product Cards**: Displays multiple product cards in a dynamic carousel, navigable using buttons.
+- **Carousel for Customer Feedback**: Displays multiple customer feedback cards in a dynamic carousel, navigable using buttons.
 - **Modal Windows**: Opens detailed product information in a modal, improving the shopping experience.
 
 ## How It Works
