@@ -1,14 +1,78 @@
+import { ProductController } from "../controllers/productController.js";
+
 export class ProductView {
-  displayProducts(topSellingProducts, newArrivalsProducts) {
+  controller;
+  productsPerPage = 4;
+  currentTopSellingPage = 1;
+  currentNewArrivalsPage = 1;
+  topSellingProducts;
+  newArrivalsProducts;
+  constructor() {
+    this.controller = new ProductController();
+    Promise.all([
+      this.controller.fetchTopSellingProducts(
+        this.currentTopSellingPage,
+        this.productsPerPage
+      ),
+      this.controller.fetchNewArrivalsProducts(
+        this.currentNewArrivalsPage,
+        this.productsPerPage
+      ),
+    ])
+      .then(([topSellingProducts, newArrivalsProducts]) => {
+        this.topSellingProducts = topSellingProducts;
+        this.newArrivalsProducts = newArrivalsProducts;
+        this.displayProducts();
+
+        this.bindShowMoreButtons(
+          () => this.showMoreTopSelling(),
+          () => this.showMoreNewArrivals()
+        );
+      })
+      .catch((error) => {
+        console.error("Error fetching products:", error);
+      });
+  }
+
+  paginateTopSelling() {
+    this.currentTopSellingPage++;
+    this.controller
+      .fetchTopSellingProducts(this.currentTopSellingPage, this.productsPerPage)
+      .then((products) => {
+        this.topSellingProducts = products;
+        console.log(this.topSellingProducts);
+        this.displayProducts();
+      })
+      .catch((error) => {
+        console.error("Error fetching top selling products:", error);
+      });
+  }
+
+  paginateNewArrivals() {
+    this.currentNewArrivalsPage++;
+    this.controller
+      .fetchNewArrivalsProducts(
+        this.currentNewArrivalsPage,
+        this.productsPerPage
+      )
+      .then((products) => {
+        this.newArrivalsProducts = products;
+        console.log(this.newArrivalsProducts);
+        this.displayProducts();
+      })
+      .catch((error) => {
+        console.error("Error fetching new arrivals products:", error);
+      });
+  }
+
+  displayProducts() {
     const topSellingSection = document.querySelector(".top-selling");
     const newArrivalsSection = document.querySelector(".new-arrivals");
-
-    topSellingSection.querySelector(".flex").innerHTML =
-      this.createProductCard(topSellingProducts);
+    topSellingSection.querySelector(".flex").innerHTML = this.createProductCard(
+      this.topSellingProducts
+    );
     newArrivalsSection.querySelector(".flex").innerHTML =
-      this.createProductCard(newArrivalsProducts);
-
-    this.bindShowMoreButtons();
+      this.createProductCard(this.newArrivalsProducts);
   }
 
   createProductCard(products) {
@@ -39,13 +103,13 @@ export class ProductView {
       .join("");
   }
 
-  bindShowMoreButtons(showMoreTopSelling, showMoreNewArrivals) {
+  bindShowMoreButtons() {
     document
       .querySelector(".top-selling .view-all")
-      .addEventListener("click", showMoreTopSelling);
+      .addEventListener("click", () => this.paginateTopSelling());
     document
       .querySelector(".new-arrivals .view-all")
-      .addEventListener("click", showMoreNewArrivals);
+      .addEventListener("click", () => this.paginateNewArrivals());
   }
 }
 

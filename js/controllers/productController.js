@@ -1,77 +1,33 @@
 import { ProductModel } from "../models/productModel.js";
 
 export class ProductController {
-  constructor(model, view) {
-    this.model = model;
-    this.view = view;
-    this.productsPerPage = 4;
-    this.currentTopSellingPage = 1;
-    this.currentNewArrivalsPage = 1;
+  productModel;
+  constructor() {
+    this.productModel = new ProductModel();
   }
 
-  fetchProducts() {
-    fetch("json/products.json")
-      .then((response) => response.json())
-      .then((data) => {
-        const products = data.products.map(
-          (product) =>
-            new ProductModel(
-              product.title,
-              product.price,
-              product.rate,
-              product.image,
-              product.fullPrice,
-              product.date
-            )
+  async fetchNewArrivalsProducts(currentNewArrivalsPage, productsPerPage) {
+    try {
+      const newArrivalsProducts =
+        await this.productModel.getNewArrivalsProducts(
+          currentNewArrivalsPage,
+          productsPerPage
         );
-        this.model.setProducts(products);
-
-        this.view.displayProducts(
-          this.model.getTopSellingProducts(
-            this.currentTopSellingPage,
-            this.productsPerPage
-          ),
-          this.model.getNewArrivalsProducts(
-            this.currentNewArrivalsPage,
-            this.productsPerPage
-          )
-        );
-
-        this.view.bindShowMoreButtons(
-          () => this.showMoreTopSelling(),
-          () => this.showMoreNewArrivals()
-        );
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
+      return newArrivalsProducts;
+    } catch (error) {
+      console.error("Error:", error);
+    }
   }
 
-  showMoreTopSelling() {
-    this.currentTopSellingPage++;
-    this.view.displayProducts(
-      this.model.getTopSellingProducts(
-        this.currentTopSellingPage,
-        this.productsPerPage
-      ),
-      this.model.getNewArrivalsProducts(
-        this.currentNewArrivalsPage,
-        this.productsPerPage
-      )
-    );
-  }
-
-  showMoreNewArrivals() {
-    this.currentNewArrivalsPage++;
-    this.view.displayProducts(
-      this.model.getTopSellingProducts(
-        this.currentTopSellingPage,
-        this.productsPerPage
-      ),
-      this.model.getNewArrivalsProducts(
-        this.currentNewArrivalsPage,
-        this.productsPerPage
-      )
-    );
+  async fetchTopSellingProducts(currentNewArrivalsPage, productsPerPage) {
+    try {
+      const topSellingProducts = await this.productModel.getTopSellingProducts(
+        currentNewArrivalsPage,
+        productsPerPage
+      );
+      return topSellingProducts;
+    } catch (error) {
+      console.error("Error:", error);
+    }
   }
 }
