@@ -27,5 +27,5 @@ The project follows the **MVC (Model-View-Controller)** design pattern, which or
 ## Good Practices
 
 - **Separation of Concerns**: Separates HTML, CSS, and JavaScript into different files, making it easier to maintain and update.
-- **Modular Architecture**: Modular architecture, with separate files for different components and functionality.
-- **Consistent Name Convention**: Consistent name convention for files and variables, making it easier to read and understand the code.
+- **Modular Architecture**: Separate files for different components and functionality.
+- **Consistent Name Convention**: Camel Case for files and variables, making it easier to read and understand the code.
