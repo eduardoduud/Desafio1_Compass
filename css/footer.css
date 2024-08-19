@@ -194,10 +194,8 @@ footer {
 
 @media (max-width: 768px) {
   .newsletter {
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 25px 25px;
     width: 98%;
     margin: 0 auto;

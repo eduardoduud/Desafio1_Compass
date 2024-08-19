@@ -209,12 +209,9 @@ li:hover .dropdown-menu {
   }
 
   .menu-nav {
-    display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: center;
     justify-content: center;
-    list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -255,11 +252,9 @@ li:hover .dropdown-menu {
   }
 
   .logo {
-    display: flex;
     flex-direction: row;
     font-size: 1.5rem;
     gap: 20px;
-    align-items: center;
   }
 
   .header-bottom nav {
@@ -294,7 +289,6 @@ li:hover .dropdown-menu {
   }
 
   .header-links {
-    display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0px;
@@ -320,9 +314,6 @@ li:hover .dropdown-menu {
   }
 
   .header-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 7vh;
     padding: 0;
   }

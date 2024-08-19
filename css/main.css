@@ -118,15 +118,6 @@
 
 @media (max-width: 768px) {
   /* New Arrivals Section */
-  .new-arrivals h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    font-family: "Integral CF";
-    font-weight: bold;
-    margin: 50px auto;
-  }
 
   .product-card {
     width: 45%;
@@ -135,14 +126,7 @@
   }
 
   .product-card img {
-    width: 100%;
     height: 200px;
-    object-fit: cover;
-    border-radius: 20px;
-  }
-
-  .product-info {
-    margin-top: 10px;
   }
 
   .product-info h3 {
@@ -153,19 +137,7 @@
     overflow: hidden;
   }
 
-  .product-info div img {
-    width: 15px;
-    height: 15px;
-  }
-
-  .product-info p {
-    font-size: 1rem;
-    font-weight: bold;
-  }
-
   .product-info .discount {
-    text-decoration: line-through;
-    color: #888;
     margin-left: 5px;
   }
 
@@ -179,15 +151,5 @@
 
   .custom-hr {
     width: 90%;
-  }
-
-  /* Top Selling Section */
-  .top-selling h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 2.5rem;
-    margin: 50px auto;
-    font-family: "Integral CF";
-    font-weight: bold;
   }
 }

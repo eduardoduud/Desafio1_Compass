@@ -12,16 +12,11 @@
 
 @media (max-width: 768px) {
   .brands {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #000000;
-    justify-content: space-evenly;
-    align-items: center;
   }
 
   .brands img {
-    object-fit: contain;
     width: 30%;
     aspect-ratio: 4/1;
   }
